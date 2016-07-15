@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="" />
+
+	<title>CS-81 Unit 7</title>
+</head>
+
+<body>
+
+<p />
+<h2>Unit 7: Question 30:  Talking about javascript dates.</h2>
+<p />
+<hr />
+
+<h3>a.</h3>
+<b>What does new Date()produce?</b>
+<p />
+new Date() will give the following; 
+
+<ul>
+<li>day of the week</li>
+<li>the current month</li>
+<li>the current day of the month</li>
+<li>the current four digit year</li>
+<li>the current time in hh:mm:ss format</li>
+<li>and then the Time Zone.</li>
+</ul>
+
+You can then assign it to a variable and work with the data.
+<p />
+
+<hr />
+<h3>b.</h3>
+<b>What does new Date(2009, 0, 20) produce?</b>
+<p />
+You get the same information as above but as applied to the date 01/20/2009.  A more interesting question comes from the fact Javascript is using "0" for January.<br />
+What happens when you do new Date(2009, 0, 0)?<p />Then you have to ask why the inconsistency?
+
+<p />
+<hr />
+<h3>c.</h3>
+<b>If d1 and d2 refer to date objects, what does the expression d1.valueOf() - d2.ValueOf() produce?</b>
+<p />
+Javascript dates are actually the number of milliseconds that have expired since 01 January, 1970 00:00:00 Universal Time (UTC).<br />
+One day contains 86,400,000 milliseconds, so we are dealing with large numbers.
+<p />
+Our expression will subtract the number of milliseconds contained in d2 from the number of milliseconds found in d1 and returm the difference.
+
+<script>
+
+var d1 = new Date();
+var d2 = new Date(2009, 0, 20);
+
+// alert(d1.valueOf());
+// alert(d2.valueOf());
+
+// alert(d1.valueOf() - d2.valueOf());
+
+</script>
+
+</body>
+</html>

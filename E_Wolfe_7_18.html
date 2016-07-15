@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="" />
+
+	<title>CS-81 Unit 7</title>
+</head>
+
+<body>
+<p />
+<p />
+<hr />
+<p />
+Unit 7 Question 18
+<p />
+<hr />
+
+<h2>
+Explain what this script does.
+<br />
+</h2>
+<b>This script:</b>
+<ol>
+<li>Assigns a function to the variable "shout".
+<li>The function assigns the text "HEY YOU" to a variable named "message"</li>
+<li>The script then initializes an alert dialog box to display the text in the variable.</li>
+</li>
+<li>The script then calls the "shout" function which displays the text in the variable "message".</li>
+<li>The script then tries to display the text in the variable "message", but since it is outside the scope<br /> of the function, "message" is no longer defined and nothing happens.</li>
+
+</ol>
+
+<script>
+
+var shout = function() {
+    var message = "HEY YOU";
+    alert(message);
+};
+
+shout();
+alert(message);
+
+</script>
+
+
+</body>
+</html>

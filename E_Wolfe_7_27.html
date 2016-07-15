@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS-81 Unit 7</title>
+</head>
+<body>
+
+<p />
+<p />
+<hr />
+<h2>Write a constructor for movie objects. <p />
+    &nbsp; &nbsp; A movie has a title, an MPAA rating, a list of directors, <br />
+    &nbsp; &nbsp; a list of producers, a studio, and a release date.</h2>
+<p />
+
+<script>
+
+    function movie(title, rating, director, producers, studio, rdate) {
+        this.title = title;
+        this.rating = rating;
+        this.director = director;
+        this.producers = producers;
+        this.studio = studio;
+        this.rdate = rdate;
+    }
+    var oneMovie = new movie("Pulp Fiction", "R", "Quentin Tarantino", "Walt Whitman", "New Line Cinema", "01/20/2008");
+    var twoMovie = new movie("Inglorious Basterds", "R", "Quentin Tarantino", "Harvey Feinstein", "New Line Cinema", "01/20/2012");
+
+    alert("Movie One:\n" + "Title: " + oneMovie.title + "\nDirected by: " + oneMovie.director + "\nProduced by: " + oneMovie.producers + "\nFor the studio: " + oneMovie.studio + "\nIt has a released date of " + oneMovie.rdate + " and is rated " + oneMovie.rating + ".");
+
+    alert("Movie Two:\n" + "Title: " + twoMovie.title + "\nDirected by: " + twoMovie.director + "\nProduced by: " + twoMovie.producers + "\nFor the studio: " + twoMovie.studio + "\nIt has a released date of " + twoMovie.rdate + " and is rated " + twoMovie.rating + ".");
+
+</script>
+
+<hr />
+Completed.
+<p />
+
+</body>
+</html>
