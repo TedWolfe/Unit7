@@ -24,8 +24,8 @@
         this.studio = studio;
         this.rdate = rdate;
     }
-    var oneMovie = new movie("Pulp Fiction", "R", "Quentin Tarantino", "Walt Whitman", "New Line Cinema", "01/20/2008");
-    var twoMovie = new movie("Inglorious Basterds", "R", "Quentin Tarantino", "Harvey Feinstein", "New Line Cinema", "01/20/2012");
+    var oneMovie = new movie("Pulp Fiction", "R", ["Quentin Tarantino", "John Waters"], ["Ridley Scott", "Walt Disney"], "New Line Cinema", "01/20/2008");
+    var twoMovie = new movie("Inglorious Basterds", "R", "Quentin Tarantino", ["Harvey Weinstein", "Robert Rodriguez"], "New Line Cinema", "01/20/2012");
 
     alert("Movie One:\n" + "Title: " + oneMovie.title + "\nDirected by: " + oneMovie.director + "\nProduced by: " + oneMovie.producers + "\nFor the studio: " + oneMovie.studio + "\nIt has a released date of " + oneMovie.rdate + " and is rated " + oneMovie.rating + ".");
 
